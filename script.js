@@ -18,7 +18,7 @@ function saveData() {
 addBtn.addEventListener("click", () => {
      const text = input.value;
      const text2 = input2.value
-     if (text === "" && text2 === "" && typeof(text2) ==! 'number') {
+     if (text === "" || text2 === "") {
           return;
      } else {
           const li = document.createElement("li");
