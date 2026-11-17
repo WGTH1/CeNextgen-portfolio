@@ -1,10 +1,17 @@
     @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+    html {
+        background: #fffcfc;
+        background: radial-gradient(circle, rgba(255, 252, 252, 1) 0%, rgba(255, 110, 236, 1) 100%);
+
+    }
+
     * {
         margin: 0;
         padding: 0;
         font-family: "Kanit", sans-serif;
         scroll-behavior: smooth;
+        box-sizing: 0;
     }
 
     header {
@@ -13,8 +20,10 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            box-shadow: 1px 5px #8888883e;
+            box-shadow: 5px 5px #8888883e;
             background: #fffcfc;
+            position: fixed;
+            width: 100%;
             background: linear-gradient(0deg, rgba(255, 252, 252, 1) 0%, rgba(255, 110, 236, 1) 100%);
 
             div {
@@ -29,13 +38,23 @@
                 display: flex;
                 font-size: 25px;
 
+                a:hover {
+                    color: white;
+                    background: rgba(0, 0, 0, 0.074);
+                    padding: 5px;
+                    border-radius: 25px;
+                }
+
                 a {
                     margin: 30px;
                     text-decoration: none;
                     color: black;
+
+
                 }
             }
         }
+
 
         section {
             padding: 290px;
@@ -44,14 +63,12 @@
             font-size: 30px;
 
             h1 {
-                display: flex;
-                justify-content: center;
+                text-align: center;
                 margin-bottom: 20px;
             }
 
             p {
-                display: flex;
-                justify-content: center;
+                text-align: center;
                 margin-bottom: 10px;
             }
 
@@ -60,6 +77,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                button:hover {
+                    color: white;
+                }
 
                 button {
                     background: pink;
@@ -234,14 +255,124 @@
     }
 
     footer {
+        background: #fffcfc;
+        background: radial-gradient(circle, rgba(255, 252, 252, 1) 0%, rgba(255, 110, 236, 1) 100%);
+
         div {
             padding: 20px;
             display: flex;
-            background: #fffcfc;
-            background: radial-gradient(circle, rgba(255, 252, 252, 1) 0%, rgba(255, 110, 236, 1) 100%);
             justify-content: center;
+
         }
 
+        a:hover {
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            justify-content: end;
+            color: black;
+            font-size: 20px;
+            margin-right: 20px;
+            padding: 20px;
+        }
+
+    }
+
+    #show {
+        background: #f899ff;
+        background: linear-gradient(90deg, rgba(248, 153, 255, 1) 0%, rgba(255, 94, 236, 1) 50%, rgba(251, 0, 255, 1) 100%);
+        text-align: center;
+        height: 100%;
+
+        h1 {
+            padding-top: 30px;
+        }
+
+        .box-shows {
+            justify-content: center;
+            display: grid;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            margin: 20px;
+
+            .box-show1 {
+                background: rgba(255, 255, 255, 0.426);
+                border-radius: 20px;
+                padding: 60px 20px;
+                margin: 20px;
+                grid-area: 1 / 2 / 2 / 3;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .box-show2 {
+                background: rgba(255, 255, 255, 0.426);
+                border-radius: 20px;
+                padding: 60px 20px;
+                margin: 20px;
+                grid-area: 2 / 2 / 3 / 3;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .box-show3 {
+                background: rgba(255, 255, 255, 0.426);
+                border-radius: 20px;
+                padding: 60px 20px;
+                margin: 20px;
+                grid-area: 1 / 3 / 2 / 4;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+
+            .box-show4 {
+                background: rgba(255, 255, 255, 0.426);
+                border-radius: 20px;
+                padding: 60px 20px;
+                margin: 20px;
+                grid-area: 2 / 3 / 3 / 4;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .goback {
+            background: #f899ff;
+            background: linear-gradient(90deg, rgba(248, 153, 255, 1) 0%, rgba(255, 94, 236, 1) 50%, rgba(251, 0, 255, 1) 100%);
+
+            a:hover {
+                color: white;
+                background: rgba(0, 0, 0, 0.123);
+                border-radius: 10px;
+                padding: auto 20px;
+            }
+
+            a {
+
+                font-size: 30px;
+                text-decoration: none;
+                color: black;
+            }
+        }
     }
 
     @media (max-width: 1260px) {
@@ -493,39 +624,347 @@
                     margin: 10px;
 
                     img {
-                        width: 120px;
+                        width: 80px;
                     }
                 }
 
                 .box-ig {
-                    margin: 20px;
+                    margin: 10px;
 
                     img {
-                        width: 120px;
+                        width: 80px;
                     }
                 }
 
                 .box-youtube {
-                    margin: 20px;
+                    margin: 10px;
 
                     img {
-                        width: 120px;
+                        width: 80px;
                     }
                 }
 
                 .box-tiktok {
-                    margin: 20px;
+                    margin: 10px;
 
                     img {
-                        width: 120px;
+                        width: 80px;
                     }
                 }
 
                 .box-discord {
-                    margin: 20px;
+                    margin: 10px;
 
                     img {
-                        width: 120px;
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 690px) {
+        header {
+            nav {
+                padding: 10px;
+
+                div {
+                    margin-left: 20px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                ul {
+                    font-size: 20px;
+
+                    a {
+                        margin: 20px;
+                    }
+                }
+            }
+
+
+            section {
+                padding: 290px;
+                font-size: 30px;
+
+                h1 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    text-align: start;
+                    margin-bottom: 10px;
+                    width: 200px;
+                }
+
+
+                .btnreadmore {
+                    justify-content: start;
+                }
+            }
+
+        }
+
+        #about {
+            h1 {}
+
+            .titleabout {
+                padding: 100px;
+
+                .photome {
+                    img {
+                        width: 300px;
+                        margin-left: 30px;
+                    }
+                }
+
+                .textabout {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                    width: 500px;
+                    font-size: 30px;
+
+                    p {}
+                }
+            }
+        }
+
+        #skill {
+            .parent {
+                margin: auto 10px;
+
+                .div1 {
+                    padding: 15px;
+
+                    img {
+
+                        width: 80px;
+                        height: 100px;
+                    }
+                }
+
+                .percent {
+                    margin: 10px;
+
+                    .bgpercent {
+
+                        width: 75px;
+
+                        p {
+                            margin-left: 40px;
+                        }
+                    }
+
+                    .bgpercent-low {
+                        width: 5 0px;
+                    }
+                }
+            }
+        }
+
+        #contacts {
+            .box-contacts {
+                padding: 10px;
+
+                .box-fackbook {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-ig {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-youtube {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-tiktok {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-discord {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 400px) {
+        header {
+            nav {
+                padding: 10px;
+
+                div {
+                    margin-left: 20px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                ul {
+                    font-size: 20px;
+
+                    a {
+                        margin: 20px;
+                    }
+                }
+            }
+
+
+            section {
+                padding: 290px;
+                font-size: 30px;
+
+                h1 {
+                    margin-bottom: 20px;
+                }
+
+                p {
+                    text-align: start;
+                    margin-bottom: 10px;
+                    width: 200px;
+                }
+
+
+                .btnreadmore {
+                    justify-content: start;
+                }
+            }
+
+        }
+
+        #about {
+            h1 {
+                align-items: center;
+            }
+
+            .titleabout {
+                padding: 100px;
+                width: 100%;
+                background: #fffcfc;
+                background: radial-gradient(circle, rgba(255, 252, 252, 1) 0%, rgba(255, 110, 236, 1) 100%);
+
+                .photome {
+                    img {
+                        width: 300px;
+                        margin-left: 30px;
+                    }
+                }
+
+                .textabout {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                    width: 500px;
+                    font-size: 30px;
+
+                    p {}
+                }
+            }
+        }
+
+        #skill {
+            .parent {
+                margin: auto 10px;
+
+                .div1 {
+                    padding: 15px;
+                    margin: 15px;
+
+                    img {
+
+                        width: 80px;
+                        height: 100px;
+                    }
+                }
+
+                .percent {
+                    margin: 10px;
+
+                    .bgpercent {
+
+                        width: 100px;
+
+                        p {
+                            margin-left: 40px;
+                        }
+                    }
+
+                    .bgpercent-low {
+                        width: 60px;
+                    }
+                }
+            }
+        }
+
+        #contacts {
+            .box-contacts {
+                padding: 10px;
+                margin: 30px;
+                .box-fackbook {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-ig {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-youtube {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-tiktok {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .box-discord {
+                    margin: 10px;
+
+                    img {
+                        width: 80px;
                     }
                 }
             }
